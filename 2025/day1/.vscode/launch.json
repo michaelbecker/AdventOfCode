@@ -25,7 +25,7 @@
             "request": "launch",
             "mode": "auto",
             "program": "${file}",
-            "args": ["input.txt"]
+            "args": ["day1-test.txt"]
         }
     ]
 }
