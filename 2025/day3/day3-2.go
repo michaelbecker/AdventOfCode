@@ -6,18 +6,20 @@ import (
 	"os"
 )
 
-func processBank(bank []int) int {
 
-	joltage := 0
+func x(bank []int, indices []int) int {
 
-	for i := 0; i < len(bank); i++ {
-		for j := i + 1; j < len(bank); j++ {
-			tmp := bank[i]*10 + bank[j]
-			if tmp > joltage {
-				joltage = tmp
-			}
-		}
+	sum := 0
+	for _, v := range indices {
+		sum = bank[v]
 	}
+	
+}
+
+
+func processBank(bank []int, acc *int) int {
+
+	joltage := x(bank, 0, 0, 0)
 
 	fmt.Printf("Max Bank joltage = %d\n", joltage)
 
